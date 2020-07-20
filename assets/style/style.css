@@ -1,0 +1,141 @@
+/* One Stylesheet to Rule Them All
+   AKA this stylesheet applies to all pages on site */
+
+
+/* Formatting for all page body */
+
+body {
+    background-image: url(../images/connect.png);
+    color: gray;
+}
+
+
+/* formatting for nav bar */
+
+.navbar-brand {
+    font-size: 3.2vw;
+    font-family: 'Georgia', Times, 'Times New Roman', serif;
+    font-weight: bold;
+    background-color: #4aaaa5;
+    margin: 0;
+    padding-top: .7em;
+    padding-bottom: .5em;
+}
+
+.nav-item, .nav-link {
+    color: gray;
+}
+
+.border-bottom {
+    color: gray;
+}
+
+main {
+    margin-bottom: 100px;
+}
+
+main h2 {
+    color: #4aaaa5;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: bold;
+    padding-top: .6em;
+}
+
+main img {
+    margin-bottom: 2vh;
+}
+
+#icon {
+   width: 80px;
+   margin: none;
+   padding: 5px; 
+}
+
+
+
+main hr {
+    width: 100%;
+    border: #cccccc solid 1px;
+}
+
+@media screen and (max-width: 767px) {
+    .navbar {
+        padding: 0;
+    }
+    .nav-link {
+        font-size: 2.6vw;
+    }
+    main h1 {
+        font-size: 6.2vw;
+    }
+    .card {
+        width: 100%;
+        margin-left: 2px;
+    }
+}
+
+@media screen and (min-width: 980px) {
+    .navbar-brand {
+        font-size: 34px;
+    }
+    .container-xl {
+        width: 70vw;
+        height: auto;
+    }
+}
+
+
+/* Footer specific formatting */
+
+footer {
+    background-color: grey;
+    border-top: 6px #4aaaa5 solid;
+}
+
+footer .container{
+    color: white;
+    font-size: 12px;
+}
+
+
+
+/* Contact Page Specific */
+
+.btn-primary {
+    background-color: #4aaaa5;
+}
+
+
+/* profile page specific */
+
+.card {
+    border: none;
+    width: 18rem;
+}
+
+.card-body {
+    padding: 10px;
+    margin: 0px;
+}
+
+.card-img-overlay {
+    padding: 0px;
+    margin-bottom: 15px;
+}
+
+.stretched-link {
+    position: absolute;
+    background: #4aaaa5;
+    width: 93.5%;
+    padding: 10px;
+    margin: 0px;
+    text-align: center;
+    padding-bottom: 5px;
+    margin-bottom: 15px;
+}
+
+.card-image-top {
+    width: 100%;
+    height: 40vh;
+    object-fit: cover;
+}

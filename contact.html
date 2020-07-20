@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- bootstrap css -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <!-- custom css -->
+    <link rel="stylesheet" href="./assets/style/style.css">
+    <title>Nancy Lambert - Contact Me</title>
+</head>
+
+<body class="container-fluid">
+    <!-- Navbar -->
+    <header class="navbar row bg-white pt-0 pb-0 mb-5 border-bottom">
+        <h1 class="navbar-brand m-0 h1 col-sm-12 col-md-4 col-xl-4 text-center text-white">Nancy Lambert</h1>
+        <nav class="nav col-xs-12 col-sm-12 col-md-8 col-xl-8 justify-content-sm-center justify-content-md-end justify-content-center">
+            <ul class="nav text-center">
+                <li class="nav-item border-right">
+                    <a class="nav-link" href="./index.html">About</a>
+                </li>
+                <li class="nav-item border-right">
+                    <a class="nav-link" href="./portfolio.html">Portfolio</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./contact.html">Contact</a>
+                </li>
+            </ul>
+        </nav>
+        <hr>
+    </header>
+
+    <main class="container-xl bg-white ml-0">
+        <!-- main content with two rows separated by a horizontal rule
+            This section contains a Contact header, and a form with Name, Email and message -->
+        <section class="row">
+            <h2 class="col-12">Contact</h2>
+            <hr>
+        </section>
+        <div class="row">
+            <div class="col-12">
+                <!-- contact form -->
+                <form>
+                    <div class="form-group">
+                        <label for="inputName">Name</label>
+                        <input type="text" class="form-control" id="inputName" placeholder="John Smith">
+                    </div>
+                    <div class="form-group">
+                        <label for="inputEmail">Email</label>
+                        <input type="email" class="form-control" id="inputEmail" placeholder="example@gmail.com">
+                    </div>
+                    <div class="form-group">
+                        <label for="inputMessage">Message</label>
+                        <textarea class="form-control" id="inputMessage" cols="12" rows="10"></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Submit</button>
+                </form>
+            </div>
+        </div>
+        <div class="row mt-5">
+            <!-- smedia links: gitHub, LinkedIn, StackOverflow, HackerRank,  -->
+            <h4>Contact me on social media:</h4>
+        </div>
+        <div class="col-12">
+            <nav class="nav col-xs-12 col-sm-12 col-md-8 col-xl-8 justify-content-sm-center justify-content-md-end justify-content-center">
+                <ul class="nav text-center">
+                    <li class="nav-item">
+                        <a class="nav-link p-0" href="https://www.hackerrank.com/armydillo007" target="_blank"><img id="icon" src="./assets/images/hackerrank.png" alt="Nancy Lambert at hackerrank"></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link p-0" href="https://www.linkedin.com/in/njlambert/" target="_blank"><img id="icon" src="./assets/images/linkedin.png" alt="Nancy Lambert at LinkedIn"></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link p-0" href="https://www.codewars.com/users/n-lambert" target="_blank"><img id="icon" src="./assets/images/codewars.png" alt="Nancy Lambert at Codewars"></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link p-0" href="https://github.com/n-lambert" target="_blank"><img id="icon" src="./assets/images/github.png" alt="Nancy Lambert on GitHub"></a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </main>
+   <!-- footer section: sticky footer-->
+   <footer class="footer mt-auto">
+    <div class="container text-center py-2">
+        <span>&copy;2020 Nancy Lambert</span>
+    </div>
+</footer>
+</body>
+
+</html>
