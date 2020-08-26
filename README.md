@@ -2,7 +2,7 @@
 
 ### Professional portfolio for Nancy Lambert ###
 
-![Screenshot of index.html](./assets/images/portfolioIndexPage.png)
+![Screenshot of index.html](./assets/images/screenshot.png)
 https://n-lambert.github.io
 
 ## Table Of Contents ##
