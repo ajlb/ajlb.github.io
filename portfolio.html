@@ -1,109 +1,140 @@
 <!DOCTYPE html>
 <html lang="en">
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- bootstrap css -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <!-- JQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- Materialize css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.css" integrity="sha512-t38vG/f94E72wz6pCsuuhcOPJlHKwPy+PY+n1+tJFzdte3hsIgYE7iEpgg/StngunGszVMrRfvwZinrza0vMTA==" crossorigin="anonymous" />
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>    
+    <!-- Material Icon set -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- JS -->
+    <script src="./assets/script/script.js">
+    </script>
     <!-- custom css -->
-    <link rel="stylesheet" href="./assets/style/style.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+
     <title>Nancy Lambert - Portfolio</title>
 </head>
 
-<body class="container-fluid">
+<body>
     <!-- Navbar -->
-    <header class="navbar row bg-white pt-0 pb-0 mb-5 border-bottom">
-        <h1 class="navbar-brand m-0 h1 col-sm-12 col-md-4 col-xl-4 text-center text-white">Nancy Lambert</h1>
-        <nav class="nav col-xs-12 col-sm-12 col-md-8 col-xl-8 justify-content-sm-center justify-content-md-end justify-content-center">
-            <ul class="nav text-center">
-                <li class="nav-item border-right">
-                    <a class="nav-link" href="./index.html">About</a>
+    <header>
+        <nav class="nav-wrapper blue accent-1">
+            <a href="./index.html" class="brand-logo">Nancy Lambert</a>
+            <a href="./index.html" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+            <ul class="right hide-on-med-and-down">
+                <li>
+                    <a href="./index.html">About</a>
                 </li>
-                <li class="nav-item border-right">
-                    <a class="nav-link" href="./portfolio.html">Portfolio</a>
+                <li class="active">
+                    <a href="./portfolio.html">Portfolio</a>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="./contact.html">Contact</a>
+                <li>
+                    <a href="./contact.html">Contact</a>
                 </li>
             </ul>
         </nav>
-        <hr>
+        <ul class="sidenav" id="mobile-demo">
+            <li>
+                <a href="./index.html">About</a>
+            </li>
+            <li class="active">
+                <a href="./portfolio.html">Portfolio</a>
+            </li>
+            <li>
+                <a href="./contact.html">Contact</a>
+            </li>
+        </ul>
     </header>
-
-    <main class="container-xl bg-white ml-0">
-        <!-- main content with two rows separated by a horizontal rule
-            This section contains a Contact header, and a form with Name, Email and message -->
-        <section class="row">
-            <h2 class="col-12">Portfolio</h2>
-            <hr>
-        </section>
-        <div class="row">
-            <div class="col-sm-12 col-md-6">
-                <div class="card">
-                    <div class="card-body">
-                        <img class="card-img-top" src="./assets/images/wordGuess.png" alt='word guess game' />
-                        <div class="card-img-overlay d-flex align-items-end justify-content-center">
-                            <a class="stretched-link text-light" href="#">Word Guess</a>
+    <!-- Main Content -->
+    <main class="container white z-depth-3">
+        <!-- main content with cards of portfolio links -->
+            <section class="row">
+                <h3 class="col-12">GitHub Project Portfolio</h3>
+                <hr>
+            </section>
+            <figure class="center"><a href="https://github.com/n-lambert"><img class="responsive-img" src="https://github-readme-stats.vercel.app/api?username=n-lambert&count_private=true"></a></figure>
+            <div class="row">
+                <div class="col m6 s12">
+                    <div class="card">
+                        <div class="card-image waves-effect waves-block waves-light">
+                            <img class="activator" src="./assets/images/HazardData.png">
+                        </div>
+                        <div class="card-content">
+                            <span class="card-title activator grey-text text-darken-4">Hazard Map<i class="material-icons right">more_vert</i></span>
+                            <a href="https://n-lambert.github.io/Hazard-Map" target="_blank">https://n-lambert.github.io/Hazard-Map</a>
+                        </div>
+                        <div class="card-reveal">
+                            <span class="card-title grey-text text-darken-4">Hazard Map<i class="material-icons right">close</i></span>
+                            <h6>Repo: <a href="https://github.com/n-lambert/Hazard-Map" target="_blank">https://github.com/n-lambert/Hazard-Map</a></h6>
+                            <p>This is a simple app that leverages data from a variety of APIs to deliver up-to-date visuals of Covid-19 infections and wildfire situations in California. It features a clean, user interactive map, indicating Covid-19 hotspots and allows users to make informed decisions on where to evacuate to.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col m6 s12">
+                    <div class="card">
+                        <div class="card-image waves-effect waves-block waves-light">
+                            <img class="activator" src="./assets/images/WeatherDashboard.png">
+                        </div>
+                        <div class="card-content">
+                            <span class="card-title activator grey-text text-darken-4">Weather Dashboard<i class="material-icons right">more_vert</i></span>
+                            <a href="https://n-lambert.github.io/WeatherDashboard/" target="_blank">https://n-lambert.github.io/WeatherDashboard/</a>
+                        </div>
+                        <div class="card-reveal">
+                            <span class="card-title grey-text text-darken-4">Weather Dashboard<i class="material-icons right">close</i></span>
+                            <h6>Repo: <a href="https://github.com/n-lambert/WeatherDashboard" target="_blank">https://github.com/n-lambert/WeatherDashboard</a></h6>
+                            <p>This weather dasboard gets current weather, forecast data and uv index from the openweathermap api via AJAX, JQuery and JS. It uses three APIs from openweathermap, and bootstrap to make the application responsive</p>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="col-sm-12 col-md-6">
-                <div class="card">
-                    <div class="card-body">
-                        <img class="card-img-top" src="./assets/images/rpgGame.png" alt='roll playing game' />
-                        <div class="card-img-overlay d-flex align-items-end justify-content-center">
-                            <a class="stretched-link text-light" href="#">RPG Game</a>
+            <div class="row">
+                <div class="col m6 s12">
+                    <div class="card">
+                        <div class="card-image waves-effect waves-block waves-light">
+                            <img class="activator" src="./assets/images/WorkDayScheduler.png">
+                        </div>
+                        <div class="card-content">
+                            <span class="card-title activator grey-text text-darken-4">Work Day Scheduler<i class="material-icons right">more_vert</i></span>
+                            <a href="https://n-lambert.github.io/DayScheduler" target="_blank">https://n-lambert.github.io/DayScheduler</a>
+                        </div>
+                        <div class="card-reveal">
+                            <span class="card-title grey-text text-darken-4">Work Day Scheduler<i class="material-icons right">close</i></span>
+                            <h6>Repo: <a href="https://github.com/n-lambert/DayScheduler" target="_blank">https://github.com/n-lambert/DayScheduler</a></h6>
+                            <p>This is a simple calendar application that allows the user to save events for each hour of the day. This app will run in the browser and feature dynamically updated HTML and CSS powered by jQuery.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col m6 s12">
+                    <div class="card">
+                        <div class="card-image waves-effect waves-block waves-light">
+                            <img class="activator" src="./assets/images/Code_Quiz.png">
+                        </div>
+                        <div class="card-content">
+                            <span class="card-title activator grey-text text-darken-4">Code Quiz<i class="material-icons right">more_vert</i></span>
+                            <a href="https://n-lambert.github.io/codeQuiz" target="_blank">https://n-lambert.github.io/codeQuiz</a>
+                        </div>
+                        <div class="card-reveal">
+                            <span class="card-title grey-text text-darken-4">Code Quiz<i class="material-icons right">close</i></span>
+                            <h6>Repo: <a href="https://github.com/n-lambert/codeQuiz" target="_blank">https://github.com/n-lambert/codeQuiz</a></h6>
+                            <p>This is a simple timed quiz for JavaScript code. You have an alloted time in seconds to answer questions. Each incorrect answer deducts 10 seconds from the timer. Scores are recorded to localStorage and displayed on a scoreboard.</p>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-        <div class="row">
-            <div class="col-sm-12 col-md-6">
-                <div class="card">
-                    <div class="card-body">
-                        <img class="card-img-top" src="./assets/images/triviaGame.png" alt='trivia game' />
-                        <div class="card-img-overlay d-flex align-items-end justify-content-center">
-                            <a class="stretched-link text-light" href="#">Trivia Game</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-sm-12 col-md-6">
-                <div class="card">
-                    <div class="card-body">
-                        <img class="card-img-top" src="./assets/images/infoWidget.png" alt='info widget project' />
-                        <div class="card-img-overlay d-flex align-items-end justify-content-center">
-                            <a class="stretched-link text-light" href="#">Info Widget</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-sm-12 col-md-6">
-                <div class="card">
-                    <div class="card-body">
-                        <img class="card-img-top" src="./assets/images/rps.png" alt='rock paper scissors game' />
-                        <div class="card-img-overlay d-flex align-items-end justify-content-center">
-                            <a class="stretched-link text-light" href="#">Rock Paper Scissors</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-sm-12 col-md-6">
-                &nbsp;
-            </div>
-        </div>
     </main>
-    <!-- footer section: sticky footer-->
-    <footer class="footer mt-auto">
-        <div class="container text-center py-2">
-            <span>&copy;2020 Nancy Lambert</span>
-        </div>
-    </footer>
-</body>
+<!-- footer section: sticky footer-->
+<footer class="page-footer blue accent-1">
+    <div class="footer-copyright">
+        <span class="container center">&copy;2020 Nancy Lambert</span>
+    </div>
+</footer>
 
+</body>
 </html>

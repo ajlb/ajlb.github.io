@@ -3,7 +3,7 @@
 ### Professional portfolio for Nancy Lambert ###
 
 ![Screenshot of index.html](./assets/images/portfolioIndexPage.png)
-https://n-lambert.github.io/homework-week-2/
+https://n-lambert.github.io
 
 ## Table Of Contents ##
 
@@ -14,7 +14,7 @@ https://n-lambert.github.io/homework-week-2/
 
 ## Introduction ##
 
-This is my professional portfolio. In it you'll find the projects I've been working on as well as a contact form and links to my social media. It is built using Bootstrap 4 and css and liberal doses of coffee.
+This is my professional portfolio. In it you'll find the projects I've been working on as well as a contact form and links to my social media. It is built using Materialize and css and liberal doses of coffee.
 
 ## Usage ##
 
@@ -22,10 +22,9 @@ Anyone is free to find the source code here on GitHub. You can access the files 
 
 ## Credits ##
 
-- BootStrap: https://getbootstrap.com/
-- Icon Finder: https://www.iconfinder.com/
+- Materialize: https://materializecss.com/
 - Sublte Patterns (Background image): https://www.toptal.com/designers/subtlepatterns/
-- Thank you to all the members of my study group for helping each other with the intricacies of Bootstrap!
+- Anurag Hazra's GitHub Readme Stats: https://github.com/anuraghazra/github-readme-stats
 
 ## License ##
 
